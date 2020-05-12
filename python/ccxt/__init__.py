@@ -102,6 +102,7 @@ from ccxt.braziliex import braziliex                        # noqa: F401
 from ccxt.btcalpha import btcalpha                          # noqa: F401
 from ccxt.btcbox import btcbox                              # noqa: F401
 from ccxt.btcmarkets import btcmarkets                      # noqa: F401
+from ccxt.btcmex import btcmex                              # noqa: F401
 from ccxt.btctradeim import btctradeim                      # noqa: F401
 from ccxt.btctradeua import btctradeua                      # noqa: F401
 from ccxt.btcturk import btcturk                            # noqa: F401
@@ -223,6 +224,7 @@ exchanges = [
     'btcalpha',
     'btcbox',
     'btcmarkets',
+    'btcmex',
     'btctradeim',
     'btctradeua',
     'btcturk',

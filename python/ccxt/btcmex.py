@@ -25,12 +25,12 @@ from ccxt.base.decimal_to_precision import TRUNCATE
 from ccxt.base.decimal_to_precision import TICK_SIZE
 
 
-class hbtc(Exchange):
+class btcmex(Exchange):
 
     def describe(self):
-        return self.deep_extend(super(hbtc, self).describe(), {
-            'id': 'hbtc',
-            'name': 'HBTC',
+        return self.deep_extend(super(btcmex, self).describe(), {
+            'id': 'btcmex',
+            'name': 'BtcMex',
             'countries': ['CN'],
             'rateLimit': 2000,
             'version': 'v1',
@@ -75,19 +75,19 @@ class hbtc(Exchange):
                 '1M': '1M',
             },
             'urls': {
-                'logo': 'https://user-images.githubusercontent.com/51840849/80134449-70663300-85a7-11ea-8942-e204cdeaab5d.jpg',  # 交易所LOGO
+                'logo': '',  # 交易所LOGO
                 'api': {
                     'quote': 'https://api.btcmex.ai/openapi/quote',  # 市场API数据端点
                     'contract': 'https://api.btcmex.ai/openapi/contract',  # 合约API数据端点
                     'option': 'https://api.btcmex.ai/openapi/option',  # 合约API数据端点
                     'public': 'https://api.btcmex.ai/openapi',  # 公共API数据端点
                     'private': 'https://api.btcmex.ai/openapi',  # 私有API数据端点
-                    'zendesk': 'https://hbtc.zendesk.com/hc/en-us',
+                    'zendesk': 'https://support.btcmex.ai/',
                 },
-                'www': 'https://www.hbtc.com',  # 公司主页
-                'referral': 'https://www.hbtc.com/register/O2S8NS',  # 邀请链接
-                'doc': 'https://github.com/bhexopen/BHEX-OpenApi/tree/master/doc',  # openapi文档地址
-                'fees': 'https://hbtc.zendesk.com/hc/zh-cn/articles/360009274694',  # 费率介绍
+                'www': 'https://www.btcmex.ai/',  # 公司主页
+                'referral': '',  # 邀请链接
+                'doc': 'https://github.com/btcmex-official/BtcMex_API',  # openapi文档地址
+                'fees': 'https://support.btcmex.ai/hc/en-us/articles/360045968313-Trading-Rules',  # 费率介绍
             },
             'api': {
                 'public': {

@@ -84,6 +84,7 @@ from ccxt.async_support.braziliex import braziliex                        # noqa
 from ccxt.async_support.btcalpha import btcalpha                          # noqa: F401
 from ccxt.async_support.btcbox import btcbox                              # noqa: F401
 from ccxt.async_support.btcmarkets import btcmarkets                      # noqa: F401
+from ccxt.async_support.btcmex import btcmex                              # noqa: F401
 from ccxt.async_support.btctradeim import btctradeim                      # noqa: F401
 from ccxt.async_support.btctradeua import btctradeua                      # noqa: F401
 from ccxt.async_support.btcturk import btcturk                            # noqa: F401
@@ -205,6 +206,7 @@ exchanges = [
     'btcalpha',
     'btcbox',
     'btcmarkets',
+    'btcmex',
     'btctradeim',
     'btctradeua',
     'btcturk',
